@@ -1,0 +1,10 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #A2CCF5;
+  margin:1% 5% ;
+  text-align: center;
+}
