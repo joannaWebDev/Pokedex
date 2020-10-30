@@ -1,10 +1,10 @@
 import React from "react"
 
-import "./App.css"
-
 import Logo from "./Logo"
 import BestPokemon from "./components/BestPokemon/BestPokemon"
 import CaughtPokemon from "./components/CaughtPokemon/CaughtPokemon"
+
+import "./App.css"
 
 const App = () => {
   const logWhenClicked = () => {

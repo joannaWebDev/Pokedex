@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 
-import styles from "./CaughtPokemon.module.css"
+import "./caughtPokemon.css"
 
 const CaughtPokemon = (props) => {
 
-    const [caught, setCaught] = useState(0);
+    const [caught, setCaught] = useState([]);
 
     const incrementCount = () => {
         setCaught(caught + 1);
@@ -12,8 +12,10 @@ const CaughtPokemon = (props) => {
 
     /* const date  = new Date().toLocaleDateString(); */
     return (<>
-    <p>Caught {caught} Pokemon on {props.date}</p>
-    <button onClick={incrementCount}>Click me</button>
+    <div className="inline">
+        <p className="paragraph">Caught <span className="caughtSpan">{caught.length}</span> Pokemon on {props.date}</p>
+        <button onClick={incrementCount} className="caughtPokemon">Click me</button>
+    </div>
     </>)
 }
 

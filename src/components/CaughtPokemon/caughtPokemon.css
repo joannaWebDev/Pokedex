@@ -1,0 +1,19 @@
+.inline {
+    display: flex;
+    gap: 1rem;
+}
+.caughtPokemon {
+   border-radius: 10%;
+   font-weight: bold;background-color: #D9AFD9;
+   background-image: linear-gradient(198deg, #D9AFD9 0%, #97D9E1 50%, #ffffff 100%);
+   border-color: transparent;
+   opacity: 0.8;
+   outline:none;
+}
+.caughtPokemon:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.caughtSpan {
+    font-weight: bold;
+}
