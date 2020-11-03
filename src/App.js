@@ -3,8 +3,10 @@ import React from "react"
 import Logo from "./Logo"
 import BestPokemon from "./components/BestPokemon/BestPokemon"
 import CaughtPokemon from "./components/CaughtPokemon/CaughtPokemon"
+import PokemonMoves from './components/PokemonMoves/PokemonMoves';
 
 import "./App.css"
+
 
 const App = () => {
   const logWhenClicked = () => {
@@ -18,6 +20,7 @@ const App = () => {
     <BestPokemon abilities={abilities} />    
 
     <CaughtPokemon date={date} />
+    <PokemonMoves/>
   </>
 }
 
