@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import "./style.css";
 
 const CaughtPokemon = (props) => {
-    const [caught, setCaught] = useState(0);
-    
+    const [caught, setCaught] = useState(0);   
     const [num, setNum] = useState("001");
+    const[pokemonNameInput,setPokemonNameInput]= useState("");
 
     const incrementCount = () => {
     setCaught(caught + 1); 
@@ -19,6 +19,9 @@ const CaughtPokemon = (props) => {
                 setNum(`0${randomNum}`);
             }
     }
+    const handleInputChange = (event) =>{
+      setPokemonNameInput (event.target.value);  
+    } 
 
     return (<>
         <div className="inline">
@@ -29,7 +32,10 @@ const CaughtPokemon = (props) => {
         <div className="inline">
             <div>                
                 <p>Random number is {num}</p>
-                <button className="caughtPokemon" onClick={generateRandomId} >Click me</button>                
+                <input type="text" 
+                value={pokemonNameInput}
+                onChange={handleInputChange}/>
+                <button className="caughtPokemon" onClick={generateRandomId} >Click me</button>            
             </div>
             <img alt="pokemon-image2" src={`https://assets.pokemon.com/assets/cms2/img/pokedex/full/${num}.png`} height="200" width="200"/>
         </div>

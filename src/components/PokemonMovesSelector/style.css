@@ -1,0 +1,7 @@
+.pokemon-moves-selector {
+    text-align: left;
+    margin: 5% auto;
+}
+.pokemon-moves-selector button {
+    margin-right: 2%;
+}

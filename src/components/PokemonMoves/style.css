@@ -3,7 +3,7 @@
     margin: 5% auto;
 }
 .pokemon-moves h3 {
-    text-transform: capitalize
+    text-transform: capitalize;
 }
 .pokemon-moves ul li {
     display: inline;

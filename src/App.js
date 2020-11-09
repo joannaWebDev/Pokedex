@@ -2,10 +2,13 @@ import React from "react"
 
 import Logo from "./Logo"
 import BestPokemon from "./components/BestPokemon/BestPokemon"
-import CaughtPokemon from "./components/CaughtPokemon/CaughtPokemon"
-import PokemonMoves from './components/PokemonMoves/PokemonMoves';
+import CaughtPokemon from './components/CaughtPokemon/CaughtPokemon';
+import PokemonMovesSelector from './components/PokemonMovesSelector/PokemonMovesSelector';
+import PokemonCity from './components/PokemonCity/PokemonCity';
+
 
 import "./App.css"
+
 
 
 const App = () => {
@@ -20,7 +23,8 @@ const App = () => {
     <BestPokemon abilities={abilities} />    
 
     <CaughtPokemon date={date} />
-    <PokemonMoves/>
+    <PokemonMovesSelector />
+    <PokemonCity />
   </>
 }
 
